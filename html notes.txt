@@ -1,0 +1,26 @@
+../ is to go back a file directory
+target= _blank opens a new tab 
+class is for multiple targets and id is for a single
+id is called by #
+class is called by .
+you can do margin by:    
+     padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    or by   
+    padding: 60px 100px 60px 100px;
+             top  right bottom left
+    or by 
+    padding: 60px 100px;
+             top  right
+             bottom left
+em is a percentage. 1em is 100% size and 2em is 200% size and so on
+grid and flex are very similar, you can use them for what ever looks best
+in css . means div class if refering to body do not use that
+text-transform
+ul= unordered list
+ol= ordered list
+li= list item
+to make an anchor link use an a tag and inside the href use a #
+!important is a tag that overides exact location
