@@ -19,6 +19,9 @@
 
 Git Codes
 'git init' initializes an empty git repository
-'git add .' will submit all code in selected directory
+'git add .' will submit all code in selected directory. you can substitute the dot for the name of a specific file to only submit that
 'git status' tells status of files being submited
 'git commit -m"(name you want to give)" is to commit to uploading directory and to name it(-m)
+'git checkout -b (file name)' creats a branch and opens it 
+'git branch' tells you the id of the branch you are in
+'git merge' merges the files together
