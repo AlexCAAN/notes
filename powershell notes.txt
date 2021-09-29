@@ -40,3 +40,5 @@ Git Commands
 'git stash list' lists all stashes in given branch
 'git stash apply' retrieves all changes made by stash
 'git stash clear' is to clean the stash cache to
+'git diff (file name if desired to display a single file)' shows the differences between the remote version and the local changes, if any
+'git checkout .' should revert to back to the last commit
