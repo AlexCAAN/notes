@@ -1,3 +1,5 @@
+Powershell Commands
+
 'ls' is to open directories
 'dir -Force' shows hidden files
 'cd' is to run command
@@ -17,11 +19,24 @@
 'cp ./(file name) (new file name)' copies ypur file
 'cp .\(file name) (file directory(you can press tab to auto complete))(file name)' to copy to a new location
 
-Git Codes
+
+Git Commands
+
 'git init' initializes an empty git repository
 'git add .' will submit all code in selected directory. you can substitute the dot for the name of a specific file to only submit that
 'git status' tells status of files being submited
 'git commit -m"(name you want to give)" is to commit to uploading directory and to name it(-m)
+'git checkout' opens branch
 'git checkout -b (file name)' creats a branch and opens it 
 'git branch' tells you the id of the branch you are in
-'git merge' merges the files together
+'git branch -d (branch name)' deletes the branch as long as no user is in it 
+'git fetch' tell you if there are changes and how many between your branch and the master
+'git merge' merges child branches into parent branch overriding changes mades
+'git rebase (master branch)' and it will add any new content on the master branch to the baranch you are working on, if you are in a child branch
+'git pull' pulls the latest update to document
+'git push (remote name) --delete (name of branch to delete)
+'git log' shows logs of total updates
+'git stash' stashes your prgress without applying
+'git stash list' lists all stashes in given branch
+'git stash apply' retrieves all changes made by stash
+'git stash clear' is to clean the stash cache to
