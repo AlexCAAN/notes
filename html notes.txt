@@ -24,3 +24,14 @@ ol= ordered list
 li= list item
 to make an anchor link use an a tag and inside the href use a #
 !important is a tag that overides exact location
+
+
+scss notes
+'@mixin' is a function do set styles with a specific selector 
+'@include' is used to call a mixin function
+'$(name you want) is the syntax used to creat a scss function
+'!default' sets default and anything above it can overide it
+'&(pseudo selector)' if nested, can be used to change said pseudo selector
+
+
+sass notes 
