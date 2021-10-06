@@ -1,7 +1,7 @@
 java and javascript are not at all related
-'var nametobecalled = "wordstobesaid";' can be overwritten later (var name, city, age;  name = 'carlos';city = 'Galeana';age = '19';)
-'alert(nametobecalled)' creates an alert
-'let nametobecalled = "wordstobesaid";' cannot be overwritten later
+    'var nametobecalled = "wordstobesaid";' can be overwritten later (var name, city, age;  name = 'carlos';city = 'Galeana';age = '19';)
+    'alert(nametobecalled)' creates an alert
+    'let nametobecalled = "wordstobesaid";' cannot be overwritten later
 
 'syntax for all var functions
     // Boolean
@@ -39,49 +39,51 @@ java and javascript are not at all related
         results
             function Symbol() { [native code] }
 
-var user = { 
-  name: 'carlos',
-  age: 19,
-  city: 'galean',
-  grades: {
-    math: 90,
-    science: 80,
-    languagearts: 100
-  }
-}
-user.grades.coding = 99;'  all can be called to be displayed separately or the function can be displayed
+functions in JavaScript
 
-'typeof nametobecalled' will tell you what kind of object exists
+    'typeof nametobecalled' will tell you what kind of object exists
 
-'number ('numbertobesaid')' turns a string into a number
+    'number ('numbertobesaid')' turns a string into a number
 
-'nametobecalled.length' tell you how many characters are in the string
+    'nametobecalled.length' tell you how many characters are in the string
 
-'stringname.charAt(number);' tell you what character is at slected number (starts with 0 and goes up)
+    'stringname.charAt(number);' tell you what character is at slected number (starts with 0 and goes up)
 
-'stringname.concat('texttobewritten')' adds temporary text to present content
+    'stringname.concat('texttobewritten')' adds temporary text to present content
 
-'stringname.startsWith('texttobewritten')' will tell you if it begins with texttobewritten or the first character in texttobewritten
+    'stringname.startsWith('texttobewritten')' will tell you if it begins with texttobewritten or the first character in texttobewritten
 
-'stringname.endsWith('texttobewritten') will tell you if it ends with texttobewritten or the last character in texttobewritten
+    'stringname.endsWith('texttobewritten') will tell you if it ends with texttobewritten or the last character in texttobewritten
 
-'stringname.repeat(numbertobesaid);' will repeat numbertobesaid amout of times
+    'stringname.repeat(numbertobesaid);' will repeat numbertobesaid amout of times
 
-'stringname.match(patterntobegoogled)' will tell you if the string contains said pattern
+    'stringname.match(patterntobegoogled)' will tell you if the string contains said pattern
 
-'stringname.replace('wordinstring','texttobewritten')'
+    'stringname.replace('wordinstring','texttobewritten')'
 
-'stringname.indexOf('wordinstring') will tell you where the first letter in wordinstring is
+    'stringname.indexOf('wordinstring') will tell you where the first letter in wordinstring is
 
-'stringname.lastIndexOf('wordinstring')' will tell you where the last occurance of wordinstring is 
+    'stringname.lastIndexOf('wordinstring')' will tell you where the last occurance of wordinstring is 
 
-'stringname.slice(numbertobesaid)' will cut anyrhing behind specified character
+    'stringname.slice(numbertobesaid)' will cut anyrhing behind specified character
 
-'stringname.slice(-numbertobesaid)' will go right to left leaving everything selected
+    'stringname.slice(-numbertobesaid)' will go right to left leaving everything selected
 
-'stringname.slice(numbertobesaid, numbertobesaid)' will leave everything inside that area
+    'stringname.slice(numbertobesaid, numbertobesaid)' will leave everything inside that area
 
-'stringname.slice(numbertobesaid, numbertobesaid).trim()' will remove extra spaces if not necesarry
+    'stringname.slice(numbertobesaid, numbertobesaid).trim()' will remove extra spaces if not necesarry
+
+example of changing result in console 
+
+    var user = { 
+    name: 'carlos',
+    age: 19,
+    city: 'galean',
+    grades: {
+        math: 90,
+        science: 80,
+        languagearts: 100
+    }  user.grades.coding = 99;'  all can be called to be displayed separately or the function can be displayed
 
 example of toUpperCase and toLowerCase
     str = original
@@ -93,10 +95,282 @@ example of toUpperCase and toLowerCase
         str.toUpperCase();
         'THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'
 
-'++numbertobesaid' will add 1 to the number(ex num = 2 ++num = 3)
-'numbertobesaid++' will add 1 to the number after displaying the original(ex num = 2 num++ = 2 num = 3)
+adding or subtracting from a var
+    '++numbertobesaid' will add 1 to the number(ex num = 2 ++num = 3)
+    'numbertobesaid++' will add 1 to the number after displaying the original(ex num = 2 num++ = 2 num = 3)
 
-'--numbertobesaid' will add 1 to the number(ex num = 2 --num = 1)
-'numbertobesaid--' will add 1 to the number after displaying the original(ex num = 2 num-- = 2 num = 1)
+    '--numbertobesaid' will add 1 to the number(ex num = 2 --num = 1)
+    'numbertobesaid--' will add 1 to the number after displaying the original(ex num = 2 num-- = 2 num = 1)
 
-'+ stringname' can conver a stringbased number to a number
+    '+ stringname' can conver a stringbased number to a number
+
+Maths in javascript 
+    JavaScript follows PEMDAS 
+
+        Assignment      	                x = y	            x = y           
+        Addition assignment     	        x += y	            x = x + y
+        Subtraction assignment      	    x -= y	            x = x - y
+        Multiplication assignment       	x *= y	            x = x * y
+        Division assignment     	        x /= y	            x = x / y
+        Remainder assignment        	    x %= y	            x = x % y
+        Exponentiation assignment       	x **= y	            x = x ** y
+        Left shift assignment       	    x <<= y	            x = x << y
+        Right shift assignment      	    x >>= y	            x = x >> y
+        Unsigned right shift assignment     x >>>= y	        x = x >>> y
+        Bitwise AND assignment      	    x &= y	            x = x & y
+        Bitwise XOR assignment      	    x ^= y	            x = x ^ y
+        Bitwise OR assignment       	    x |= y	            x = x | y
+        Logical AND assignment      	    x &&= y	            x && (x = y)
+        Logical OR assignment       	    x ||= y	            x || (x = y)
+        Logical nullish assignment          x ??= y	            x ?? (x = y)
+
+conditionals in JavaScript
+    var age = 12;
+    var agetwo = '12';
+
+        if (age == agetwo) {
+        console.log('they are equal')
+        }                               works with stringbased numbers  
+                                        true
+
+        if (age === agetwo) {
+        console.log('they are equal')
+        }                               doesnt work with stringbased numbers
+                                        no answer available
+
+
+    var age = 25;
+
+        if(age !== agetwo) {
+        console.log('not equal')
+        }                           will answer in for of boolean
+                                    false (not equal)
+
+        if (age >= 25) {
+        console.log('old enough to rent a car')
+        }                                       greater than or equal to
+                                                true
+
+        if (age > 25) {
+        console.log('old enough to rent a car')
+        }                                       greater than
+                                                false
+
+
+    var age = 10;
+        if (age <= 10) {
+        console.log('kids menu')
+        }                                           smaller than or equal to
+                                                    true
+
+        if (age < 10) {
+        console.log('you can eat from kids menu')
+        }                                           smaller than
+                                                    false
+
+if/else conditionals example
+    var age = 8;
+
+
+        if (age <= 10) {
+        console.log("you can eat from the kids menu");
+        } else {
+        console.log("to the adult menu for you!");
+        }                                               results: "you can eat from the kids menu"
+
+    var age = 30;
+
+
+        if (age <= 10) {
+        console.log("you can eat from the kids menu");
+        } else {
+        console.log("to the adult menu for you!");
+        }                                               results: "to the adult menu for you!"
+
+if/else if conditionals example
+    var age = 8;
+
+        if (age <= 10) {
+        console.log("you can eat from the kids menu");
+        console.log("you are not old enough to drive");
+        console.log("you are not old enough to rent a car");
+
+        } else if (age >= 16 && age < 25) { 
+        console.log("you can not eat from the kids menu");
+        console.log("you are old enough to drive");
+        console.log("you are not old enough to rent a car");
+
+        } else if (age >= 25) {
+        console.log("you can not eat from the kids menu");
+        console.log("you are old enough to drive");
+        console.log("you are old enough to rent a car");
+        }
+
+                                                            results: "you can eat from the kids menu"
+                                                                     "you are not old enough to drive"
+                                                                     "you are not old enough to rent a car"
+                                                            
+
+    var age = 16;
+
+        if (age <= 10) {
+        console.log("you can eat from the kids menu");
+        console.log("you are not old enough to drive");
+        console.log("you are not old enough to rent a car");
+
+        } else if (age >= 16 && age < 25) { 
+        console.log("you can not eat from the kids menu");
+        console.log("you are old enough to drive");
+        console.log("you are not old enough to rent a car");
+
+        } else if (age >= 25) {
+        console.log("you can not eat from the kids menu");
+        console.log("you are old enough to drive");
+        console.log("you are old enough to rent a car");
+        }
+                                                            results: "you can eat from the kids menu"
+                                                                     "you are old enough to drive"
+                                                                     "you are not old enough to rent a car"
+
+    var age = 25;
+
+        if (age <= 10) {
+        console.log("you can eat from the kids menu");
+        console.log("you are not old enough to drive");
+        console.log("you are not old enough to rent a car");
+
+        } else if (age >= 16 && age < 25) { 
+        console.log("you can not eat from the kids menu");
+        console.log("you are old enough to drive");
+        console.log("you are not old enough to rent a car");
+
+        } else if (age >= 25) {
+        console.log("you can not eat from the kids menu");
+        console.log("you are old enough to drive");
+        console.log("you are old enough to rent a car");
+        }
+                                                            results: "you can eat from the kids menu"
+                                                                     "you are old enough to drive"
+                                                                     "you are old enough to rent a car"
+
+switch conditionals example
+    var dataPoint = 'goggy';
+
+        switch (typeof dataPoint){
+        case "string":
+            console.log('it is a string!');
+            break;
+        case "number":
+            console.log('it is a number!');
+            break;
+        case "boolean":
+            console.log('it is a boolean!');
+            break;  
+        default:
+            console.log('no matches')
+        }
+                                            results: 'it is a string!'
+
+    var dataPoint = 42;
+
+        switch (typeof dataPoint){
+        case "string":
+            console.log('it is a string!');
+            break;
+        case "number":
+            console.log('it is a number!');
+            break;
+        case "boolean":
+            console.log('it is a boolean!');
+            break;  
+        default:
+            console.log('no matches')
+        }
+                                            results: 'it is a number!'
+
+    var dataPoint = true;
+
+        switch (typeof dataPoint){
+        case "string":
+            console.log('it is a string!');
+            break;
+        case "number":
+            console.log('it is a number!');
+            break;
+        case "boolean":
+            console.log('it is a boolean!');
+            break;  
+        default:
+            console.log('no matches')
+        }
+                                            results: 'it is a boolean!'
+
+    var dataPoint = {};
+
+        switch (typeof dataPoint){
+        case "string":
+            console.log('it is a string!');
+            break;
+        case "number":
+            console.log('it is a number!');
+            break;
+        case "boolean":
+            console.log('it is a boolean!');
+            break;  
+        default:
+            console.log('no matches')
+        }
+                                            results: 'no matches'
+
+ternary operator example
+
+    function ageVerification(age) {
+        if(age > 25) {
+            console.log('can rent car')
+        } else {
+            console.log('cant rent a car')
+        }
+
+        let answer = age > 25 ? 'can rent a car' : "cant rent a car";
+        console.log(answer);
+        
+        let answer = age > 25 ? console.log('can rent a car') : console.log("cant rent a car");
+        }
+                                                                                                all sets give same result
+    ageVerification(29)(used to set age due to set function)
+
+    a different example 
+        function adminControls(user) {
+            // if (user) {
+            //   if (user.admin) {
+            //     return 'showing admin controls...';
+            //   } else {
+            //     return 'You need to be an admin';
+            //   }
+            // } else {
+            //   return 'You need to be logged in';
+            // }
+
+            return user
+                ? user.admin ? "showing admin controls" : "You need to be an admin"
+                : "you need to be logged in";
+            }
+
+            const userOne = {
+            name: "Kristine",
+            admin: true
+            };
+
+            adminControls(userOne); //?
+
+            const userTwo = null;
+
+            adminControls(userTwo); //?
+
+            const userThree = {
+            name: "Tiffany",
+            admin: false
+            };
+
+            adminControls(userThree); //?
+                                                                                            results: if any of the 3 users is called it will display permissions
