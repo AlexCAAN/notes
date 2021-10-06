@@ -374,3 +374,4 @@ ternary operator example
 
             adminControls(userThree); //?
                                                                                             results: if any of the 3 users is called it will display permissions
+
