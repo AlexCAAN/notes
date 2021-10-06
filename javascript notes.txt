@@ -3,7 +3,7 @@ java and javascript are not at all related
     'alert(nametobecalled)' creates an alert
     'let nametobecalled = "wordstobesaid";' cannot be overwritten later
 
-'syntax for all var functions
+syntax for all var functions
     // Boolean
     var truthy = true;
     var nottruthy = false;
@@ -374,4 +374,164 @@ ternary operator example
 
             adminControls(userThree); //?
                                                                                             results: if any of the 3 users is called it will display permissions
+
+building functions example
+    function hithere (){
+    console.log('hi there');
+    }                        console.log leave it undefined but has it existing
+
+    function hithere2() {
+    return "hi there";
+    }                       return puts the content inside of the variable instead of being besides
+
+        function hellothere () {
+        console.log('obiwan kenobi')
+        }
+        undefined
+
+            var storedtext = hellothere();
+            obiwan kenobi
+            undefined
+            storedtext
+            undefined
+
+        function goodbye () {
+            return 'hated enemy'
+        }
+        undefined
+
+            var storedtext2 = goodbye();
+            undefined
+            storedtext2
+            'hated enemy'
+
+varaible scope changing example
+    var userobj = {
+        email: 'suckme@gmsil.com',
+        fullName: 'Eat My Ass'
+        } 
+                                    // this is a global function, try to not do this
+
+    function dashboardgreeting() {
+        var userobj = {
+        //     if you remove this var itll turn the variable into a global function
+        email: 'suckme@gmsil.com',
+        fullName: 'eat your ass'
+        }
+        console.log("hi there, ".concat(userobj.fullName));
+        }
+
+    dashboardgreeting()
+    console.log(userobj.fullName)
+
+the differences between expression and a function declaration:
+    the main difference between them is that a declaration is meant to be outside of an expression
+        examples:
+        var age = 3;
+
+            separate function expression
+            if (age <= 10) {
+                var buildmenu = function (){
+                    return 'kids menu'; 
+                };
+
+                function declaration inside of expression
+                function buildmenutwo() {
+                    return 'another kids menu';
+                }
+            
+                console.log(buildmenu());
+                console.log(buildmenutwo());
+            }                                       bad practice
+
+            var age = 3;
+
+
+                separate function
+                function buildmenutwo() {
+                    return 'another kids menu';
+                }
+
+
+                separate function
+                if (age <= 10) {
+                    var buildmenu = function (){
+                        return 'kids menu';
+                    };
+                    console.log(buildmenu());
+                    console.log(buildmenutwo());
+                }                                   good practice
+
+function arguments javascript
+    function fullname(firstname, lastname, language) {
+        var language = language || 'English';
+        return lastname.toUpperCase() + ", " + firstname.toUpperCase() + " - " + language;
+    }
+
+
+    console.log(fullname('carlos', 'leany', 'Spanish'))
+
+    //  || means or
+    what this should do, is to pring input name and last name and add language if specified. if not specified it will use "|| 'English';" 
+
+reference vs value
+    var someUser = {
+        name: 'Jordan'
+    }
+
+    function nameFormatter (user) {
+        return user.name = 'Oops';
+    }
+
+    nameFormatter(someUser); // "Oops"
+
+    someUser; // Object {name: "Oops"}
+
+    var someName = 'Tiffany';
+
+    function someOtherNameFormatter(name) {
+        return name = 'Oops';
+    }
+
+    someOtherNameFormatter(someName); // "Oops"
+
+    someName; // "Tiffany"
+
+    function nameFormatter (userName) {
+        return userName = 'Oops';
+    }
+
+    someUser.name; // "Oops"
+
+    someUser.name = 'Kristine';
+
+    nameFormatter(someUser.name); // "Oops"
+
+    someUser.name; // "Kristine"
+                                                            selecting user in the function will cahnge it permanently, however if you were to select the function (ie name) it will temporarily change it
+
+example of work ive done by myself
+    var age = 19;
+
+        if (age >= 16 && age <=60) {
+        console.log('you can have a girlfriend');
+        } else {
+        console.log('youre just not right');
+        }                                                           result: "you can have a girlfriend"
+
+
+
+    function something(tempurature, humidity, wetness) {
+        var wetness = wetness || 'very wet';
+        return tempurature + ' ,' + humidity + ' - ' + wetness;
+        }                                                           result: "69* ,69% - very wet"
+
+    console.log(something('69*', '69%'))
+
+
+
+    var num1 = 62;
+    var num2 = 7;
+
+    console.log(num1 + num2);                                       result: 69
 
