@@ -535,3 +535,85 @@ example of work ive done by myself
 
     console.log(num1 + num2);                                       result: 69
 
+example of function to track scoring or obeject average
+    function battingAverage () {
+        var hits = 97;                  values can be changed
+        var atBats = 376;               values can be changed
+    
+        return {
+            getCurrentAverage: function () {
+            return (hits/atBats);       if prev values changed, update
+            },
+            updateHitsAndAtBats: function (hit, atBat) { if prev values changed, update
+        
+            hits += hit;                if prev values changed, update
+            atBats += atBat;            if prev values changed, update
+            }
+        }  
+    }
+
+    var altuve = battingAverage();
+    console.log(altuve.getCurrentAverage());
+    altuve.updateHitsAndAtBats(78, 154);    this is tha value that will be added
+    console.log(altuve.getCurrentAverage());
+ 
+example of the 'this' tag (its a function that specifies to search for an object within said function)
+    var guide = {
+        title: 'Guide to Programming',
+        content: 'content will go here', 
+        visibleToUser: function (viewingUserRole) {
+            if (viewingUserRole === 'paid') {
+            return true;
+            } else {
+            return false;
+            }
+        },
+        renderContent: function(userRole) {
+            if (this.visibleToUser(userRole)) {
+                console.log(this.title + " - " + this.content);
+            } else {
+            this.content = '';
+            console.log(this.title + " - " + this.content);
+            }
+        }
+        }
+    user = { role: 'paid'};
+    guide.renderContent(user.role)
+
+syntax for arrays
+    syntax to make an array is []
+    'pop' erases the last content
+    'push' adds content to end of array
+    'shift' erases the first content 'unshift' is to re-add something to where you shifted
+
+3 examples of 'for' loops 
+    var players = [
+        'Altuve',
+        'Bregman',
+        'Correa',
+        'Springer'
+    ];
+
+    for(var i = 0; i < players.length; i++) {
+        console.log(players[i]);               the lamest and hardest to write loop
+    }
+
+    for (player in players) {
+        console.log(player);
+        console.log(players[player]);          the cleanest loop
+    }
+
+    players.forEach(function(element) {
+        console.log(element);                   the most efficient loop
+    });
+
+    var student = {
+        name: 'Carlos',
+        age: 19,
+        city: 'Galeana'
+    };
+
+    for (var key in student) {
+        console.log(key + " => " + student[key]);
+    }
+
