@@ -2,6 +2,7 @@ java and javascript are not at all related
     'var nametobecalled = "wordstobesaid";' can be overwritten later (var name, city, age;  name = 'carlos';city = 'Galeana';age = '19';)
     'alert(nametobecalled)' creates an alert
     'let nametobecalled = "wordstobesaid";' cannot be overwritten later
+    'copy(nametobecalled)' copies js code
 
 syntax for all var functions
     // Boolean
@@ -586,34 +587,55 @@ syntax for arrays
     'push' adds content to end of array
     'shift' erases the first content 'unshift' is to re-add something to where you shifted
 
-3 examples of 'for' loops 
-    var players = [
-        'Altuve',
-        'Bregman',
-        'Correa',
-        'Springer'
-    ];
+examples of loops 
+    example of 'for' loops
+        var players = [
+            'Altuve',
+            'Bregman',
+            'Correa',
+            'Springer'
+        ];
 
-    for(var i = 0; i < players.length; i++) {
-        console.log(players[i]);               the lamest and hardest to write loop
-    }
+        for(var i = 0; i < players.length; i++) {
+            console.log(players[i]);               the lamest and hardest to write loop
+        }
 
-    for (player in players) {
-        console.log(player);
-        console.log(players[player]);          the cleanest loop
-    }
+        for (player in players) {
+            console.log(player);
+            console.log(players[player]);          the cleanest loop
+        }
 
-    players.forEach(function(element) {
-        console.log(element);                   the most efficient loop
-    });
+        players.forEach(function(element) {
+            console.log(element);                   the most efficient loop
+        });
 
-    var student = {
-        name: 'Carlos',
-        age: 19,
-        city: 'Galeana'
-    };
+        var student = {
+            name: 'Carlos',
+            age: 19,
+            city: 'Galeana'
+        };
 
-    for (var key in student) {
-        console.log(key + " => " + student[key]);
-    }
+        for (var key in student) {
+            console.log(key + " => " + student[key]); more sophisticated but functional
+        }
+    
+    example of while and while/do loops
+        var players = [
+            'Altuve',
+            'Bregman',
+            'Correa',
+            'Springer'
+        ];
+
+        var i = 21;
+        while (i < players.length) {
+            console.log(players[i]);
+            i++;
+        }
+
+        var i = 21;
+        do {
+            console.log(players[i]);
+            i++;
+        } while (i < players.length)
 
