@@ -1,6 +1,11 @@
 ../ is to go back a file directory
 target= _blank opens a new tab 
 class is for multiple targets and id is for a single
+
+fancy pic link 
+
+     https://source.unsplash.com/random/150x150
+
 id is called by #
 class is called by .
 you can do margin by:    
@@ -25,6 +30,12 @@ li= list item
 to make an anchor link use an a tag and inside the href use a #
 !important is a tag that overides exact location
 
+    height: calc(100vh - 20px);
+    width: calc(100vw - 20px);
+    flex-basis: 200px;
+    flex-grow: 2;
+    flex-shrink: 1;
+
 
 scss notes
 '@mixin' is a function do set styles with a specific selector 
@@ -32,6 +43,3 @@ scss notes
 '$(name you want) is the syntax used to creat a scss function
 '!default' sets default and anything above it can overide it
 '&(pseudo selector)' if nested, can be used to change said pseudo selector
-
-
-sass notes 
